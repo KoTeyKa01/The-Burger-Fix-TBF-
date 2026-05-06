@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica Neue;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #181818,;
+    align-items: center;
+    padding: 10px 130px;
+    position: fixed;
+    top: 0;
+    width: 100%; /* Makes it full width */
+    z-index: 1; 
+    .burgerlogo{
+        width: 15%;
+    }
+    & > ul{
+        display: flex;
+        gap: 70px;
+        list-style-type: none;
+        cursor: pointer;
+        & > li{
+            & > a{
+                color: #fff9f0;
+                font-family: inherit;
+                text-decoration: none;
+            }   & > a:hover{
+                color: rgba(217, 217, 217, 0.887);
+            }
+        }
+        
+    }
+    & > button{
+        font-family: Barrio, Georgia, sans-serif;
+        font-family: "Barrio", system-ui;
+        font-style: normal;
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff9f0;
+        border: 1px solid var(--black);
+        background-color: var(--black);
+        background-image: url(../../assets/img/wave.svg);
+        background-position: 50% 70%;
+        background-repeat: no-repeat;
+        background-size: auto;
+        padding: .75rem 1.5rem;
+        text-decoration: none;
+        display: flex;
+        position: relative;
+        &:hover{
+            border: solid 4px blue;
+            border-radius: 50%;
+            
+        }
+    }
+}

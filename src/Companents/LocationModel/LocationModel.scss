@@ -1,0 +1,91 @@
+.model-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    backdrop-filter: blur(4px);
+  }
+  
+  .model-box {
+    background: #181818;
+    color: #fff9f0;
+    border-radius: 20px;
+    padding: 32px;
+    width: 500px;
+    max-width: 90vw;
+    position: relative;
+    animation: popIn 0.2s ease;
+  
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+  
+    .model-address {
+      color: #aaa;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+  
+    .model-map {
+      margin-bottom: 20px;
+    }
+  
+    .model-info {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .model-info-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      flex: 1;
+      background: #222;
+      border-radius: 12px;
+      padding: 14px;
+  
+      span { font-size: 20px; }
+  
+      strong {
+        display: block;
+        font-size: 13px;
+        margin-bottom: 4px;
+      }
+  
+      p {
+        font-size: 13px;
+        color: #aaa;
+        margin: 2px 0;
+      }
+    }
+  
+    .model-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: #2a2a2a;
+      border: none;
+      color: white;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+  
+      &:hover { background: #333; }
+    }
+  }
+  
+  @keyframes popIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to   { transform: scale(1);    opacity: 1; }
+  }

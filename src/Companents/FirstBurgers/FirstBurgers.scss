@@ -1,0 +1,47 @@
+.firstBurger{
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    .firstBurgerText{
+        font-family: Barrio, Georgia, sans-serif;
+        color:#f9f9f9;
+        & > h1{
+            font-size: 100px;
+            font-weight: 400;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            margin-top: 60px;
+            color: #f9f9f9;
+            & > span{
+             background-image: url(../../assets/img/line.svg);
+             background-position: 100% 100%;
+             background-repeat: no-repeat;
+             background-size: auto;
+             background-attachment: scroll;
+             margin: 0px 20px;
+            }
+            .span2{
+                background-image: url(../../assets/img/yellowline.svg);
+                background-position: 50% 100%;
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+        }
+        
+    }
+    .burgersimg{
+        position: absolute;
+        top: 200px;
+        transform: translateX(-50%) scale(1);
+        width: 900px;
+        height: auto;
+        transition: transform 0.2s ease-out;
+        pointer-events: none;
+        align-items: center;
+    }
+}

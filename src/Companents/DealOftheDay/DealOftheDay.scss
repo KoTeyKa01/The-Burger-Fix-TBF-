@@ -1,0 +1,53 @@
+*{
+    align-items: center;
+}
+.dealoftheday{
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica Neue;
+    margin: 0 70px;
+    .dealofthedayText{
+        color: white;
+        & > h1{
+            font-size: 58px;
+            margin-bottom: 50px;
+        }
+        
+    }
+    .imges{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // 3 equal columns
+        grid-gap: 10px; // space between items
+        margin: 0 10px;
+        .red{
+            background-color: #e31524;
+            border-radius: 50px;
+            height: 500px;
+            .beastBurger{
+                width: 100%;
+                padding: 20px;
+            }
+        }
+        .yellow{
+            background-color: #e39e43;
+            .classy{
+                width: 100%;
+                height: 286px;
+            }
+        }
+        .green{
+            background-color: #05c167;
+            .vegy{
+                width: 100%;
+                height: 286px;
+            }
+        }
+    }
+    .text{
+        font-size: 1.125rem;
+        font-family: Helvetica Neue;
+        padding:0 20px;
+
+    }
+}
